@@ -1,19 +1,35 @@
 <h1> Identifying Points of Interest and Customer Segmentation in Telecommunications </h1>
 
-<h3> Research description </h3>
-The research aims to present a novel approach to customer segmentation by leveraging GIS and machine learning, resulting in the identification of distinct customer groups based on spatial and behavioral patterns. It also seeks to develop improved models for determining points of attraction for identified customer segments in St. Petersburg, offering valuable information for targeted marketing and service optimization.
+<h3> Research description - goals, tasks, main results </h3>
+The goal of this research is to apply machine learning methods to segment Tele2 customers based on geospatial data concerning their movement within the area of Saint Petersburg. 
 
-The study seeks to contribute to the improvement of Tele2's customer engagement strategies and the broader field of GIS and machine learning applications in the telecommunications industry. The outcomes have the potential to inform strategic deployment of telecommunications networks, improve customer satisfaction, and enable proactive measures to stay ahead of competitors in the market.
+To accomplish this goal, the following tasks were set: analysis of existing approaches to working with geospatial data, review of machine learning methods for clustering tasks, processing of Tele2 customer geospatial data, application of various clustering methods, and their interpretation. 
+The main results of the study are represented by the obtained clusters, which describe people in terms of their movements within Saint Petersburg, as well as from the perspective of their interests. Additional results included new variables obtained during clustering and econometric analysis. 
 
-<h3> Key findings </h3>
+<h3>Files description</h3>
 
-Write what we got from modeling
+1. main file
 
-<h3> Usage of the repository files </h3>
+The file contains pre-processing steps, EDA and some feature generation steps. It requires the results of POIs-parsing code.  
 
-To get the results of modeling evaluation from this repository, follow these steps:
+2. POIs-parsing cod
 
-1. Step one
-2. Step two
-3. blah-blah-blah
-4. blah-blah-blah
+The code for POIs of Saint-Petersburg generation process. Contains both parsing and pre-processing steps.
+
+3. heatmap creation code
+
+The process of 28T pictures generation for SOM method. Resulted pictures are needed to be added in archive. Dataset with features from "main file" is required.
+
+4. SOM
+
+Part of heatmaps clusterization with SOM. Archive with heatmaps from previous code is required. Dataset with features from "main file" is required.
+
+5. DBSCAN
+
+Identification of settlement levels, their clusterization, identification of stable geolocations for IDs, identification of stable geolocations for different time periods of day. Dataset with features from "main file" is required.
+
+6. High level clusterization
+
+Customer clusterization according to interests with PCA.  Dataset with features from "main file" is required.
+
+
