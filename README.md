@@ -1,9 +1,15 @@
 <h1> Identifying Points of Interest and Customer Segmentation in Telecommunications </h1>
 
 <h3> Research description - goals, tasks, main results </h3>
-The goal of this research is to apply machine learning methods to segment Tele2 customers based on geospatial data concerning their movement within the area of Saint Petersburg. 
+The goal of this research is to develop an approach to customer segmentation based on geospatial data using machine learning.
 
-To accomplish this goal, the following tasks were set: analysis of existing approaches to working with geospatial data, review of machine learning methods for clustering tasks, processing of Tele2 customer geospatial data, application of various clustering methods, and their interpretation. 
+To achieve this goal, within this research we need to solve the following tasks:
+1.	Analyze the existing methods of customer segmentation based on ML in geospatial data;
+2.	Conduct an Exploratory Data Analysis (EDA) on the provided dataset and pre-process the data to identify useful patterns;
+3.	Perform feature transformations and clustering to generate new features for the dataset;
+4.	Provide hypotheses about customer behavior based on received clusters and features;
+5.	Estimate financial effects from implementation of the deliverables.
+
 The main results of the study are represented by the obtained clusters, which describe people in terms of their movements within Saint Petersburg, as well as from the perspective of their interests. Additional results included new variables obtained during clustering and econometric analysis. 
 
 <h3>Files description</h3>
